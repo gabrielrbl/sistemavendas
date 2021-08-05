@@ -11,13 +11,13 @@ const pool = firebird.pool(5,
     }
 );
 
-const execute = (query) => {
+const execute = (query, params=[]) => {
     return new Promise((resolve, reject) => {
         pool.get((err, db) => {
             if(err) {
                 return reject(err);
             }
-            db.query(query, (err, result) => {
+            db.query(query, params, (err, result) => {
                 if(err) {
                     return reject(err);
                 } 
