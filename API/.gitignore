@@ -1,0 +1,13 @@
+# dependencies
+node_modules/
+
+/build
+
+.env
+
+# config da api
+config.json
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

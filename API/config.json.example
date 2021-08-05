@@ -1,0 +1,12 @@
+{
+    "database": {
+        "host": "host",
+        "db": "dburl",
+        "user": "user",
+        "password": "password",
+        "port": 1234
+    },
+    "api": {
+        "port": 1234
+    }
+}
