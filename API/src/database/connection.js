@@ -7,7 +7,8 @@ const pool = firebird.pool(5,
         database: database.db,
         user: database.user,
         password: database.password,
-        port: database.port
+        port: database.port,
+        lowercase_keys: true
     }
 );
 
