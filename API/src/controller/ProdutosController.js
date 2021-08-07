@@ -1,6 +1,6 @@
 const db = require("../database/connection");
 
-const findAll = async function(req, res, next) {
+const findAllProduct = async function(req, res, next) {
 
     await db.execute(`
         SELECT * FROM PRODUTO
@@ -19,7 +19,7 @@ const findAll = async function(req, res, next) {
 
 }
 
-const findById = async function(idProduto, req, res, next) {
+const findProductById = async function(idProduto, req, res, next) {
     
     await db.execute(`
         SELECT * FROM PRODUTO WHERE CDPRODUTO = ?`, [idProduto]
