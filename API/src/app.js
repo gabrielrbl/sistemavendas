@@ -10,7 +10,7 @@ app.use('/api', homeRouter);
 app.use('/api/produtos', produtosRouter);
 
 app.use((req, res, next) => {
-    const erro = new Error("Não encontrado");
+    const erro = new Error("Rota não encontrada");
     next(erro);
 });
 
